@@ -12,8 +12,8 @@ bool IsPalindrome(int num)
     int rev_num = 0;
     while (rev_calc > 0)
     {
-        int r = rev_calc % 10;
-        rev_num = rev_num * 10 + r;
+        int last_num = rev_calc % 10;
+        rev_num = rev_num * 10 + last_num;
         rev_calc = rev_calc / 10;
     }
     return (num == rev_num);
