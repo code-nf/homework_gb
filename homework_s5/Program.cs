@@ -106,14 +106,15 @@ double[] CreateArray(int size)
     return array;
 }
 
-    void ShowArray(double[]array)
+void ShowArray(double[]array)
+{
+    for(int i = 0;i < array.Length; i++)
     {
-        for(int i = 0;i < array.Length; i++)
-            {
-                Console.Write(array[i]+" ");
-            }
-        Console.WriteLine();
+        Console.Write(array[i]+" ");
     }
+    Console.WriteLine();
+}
+
 double DifferenceMaxMinNum(double[] array)
 {
     double min = array.Min();
@@ -126,4 +127,4 @@ int length = Convert.ToInt32(Console.ReadLine());
 double[] myArray = CreateArray(length);
 ShowArray(myArray);
 double result = DifferenceMaxMinNum(myArray);
-Console.Write($"The difference between the minimum and maximum number is {result}");
+Console.Write($"The difference between the  maximum number and  minimum number is {result}");
