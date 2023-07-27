@@ -46,29 +46,29 @@
 // // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // // 6, 1, 33 -> [6, 1, 33]
 
-// int ReadInt (string message)
-//     {
-//         Console.WriteLine(message);
-//         return Convert.ToInt32(Console.ReadLine());
-//     }
+int ReadInt (string message)
+    {
+        Console.WriteLine(message);
+        return Convert.ToInt32(Console.ReadLine());
+    }
 
-// int[] CreateArray(int size)
-//     {
-//         int[] array = new int[size];
-//         for(int i = 0; i < size; i++)
-//         array[i] = ReadInt($"Введите число в {i} индекс массива");
-//         return array;
-//     }    
+int[] CreateArray(int size)
+    {
+        int[] array = new int[size];
+        for(int i = 0; i < size; i++)
+        array[i] = ReadInt($"Введите число в {i} индекс массива");
+        return array;
+    }    
 
-//     void ShowArray(int[]array)
-//     {
-//         for( int i = 0;i < array.Length; i++)
-//             {
-//                 Console.Write(array[i]+" ");
-//             }
-//     }
+    void ShowArray(int[]array)
+    {
+        for( int i = 0;i < array.Length; i++)
+            {
+                Console.Write(array[i]+" ");
+            }
+    }
 
 
-//     int size = ReadInt("Введите количество элементов в массиве");
-//     int[]myArray = CreateArray(size);
-//     ShowArray(myArray);
+    int size = ReadInt("Введите количество элементов в массиве");
+    int[]myArray = CreateArray(size);
+    ShowArray(myArray);
